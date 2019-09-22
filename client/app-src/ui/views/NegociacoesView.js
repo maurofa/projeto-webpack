@@ -1,5 +1,4 @@
 import { View } from './View.js';
-import { DateConverter } from '../converters/DateConverter.js';
 
 export class NegociacoesView extends View {
 
@@ -20,7 +19,7 @@ export class NegociacoesView extends View {
                 ${model.paraArray().map(negociacao =>
                 `
                     <tr>
-                        <td>${DateConverter.paraTexto(negociacao.data)}</td>
+                        <td>${negociacao.data.toLocaleDateString()}</td>
                         <td>${negociacao.quantidade}</td>
                         <td>${negociacao.valor}</td>
                         <td>${negociacao.volume}</td>
