@@ -4,25 +4,25 @@ webpackJsonp([1],[
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Bind_js__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Bind_js__ = __webpack_require__(13);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Bind_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ConnectionFactory_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ConnectionFactory_js__ = __webpack_require__(6);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DaoFactory_js__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DaoFactory_js__ = __webpack_require__(14);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_2__DaoFactory_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ApplicationException_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ApplicationException_js__ = __webpack_require__(9);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_3__ApplicationException_js__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__HttpService_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__HttpService_js__ = __webpack_require__(10);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ProxyFactory_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ProxyFactory_js__ = __webpack_require__(5);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__decorators_Debounce_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__decorators_Debounce_js__ = __webpack_require__(15);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_6__decorators_Debounce_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__decorators_Controller_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__decorators_Controller_js__ = __webpack_require__(16);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__decorators_Controller_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Obrigatorio_js__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Obrigatorio_js__ = __webpack_require__(17);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_8__Obrigatorio_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__decorators_BindEvent_js__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__decorators_BindEvent_js__ = __webpack_require__(18);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_9__decorators_BindEvent_js__["a"]; });
 
 
@@ -70,7 +70,7 @@ let View = class View {
 
 let Negociacao = class Negociacao {
 
-    constructor(_data = __WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */]('data'), _quantidade = __WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */]('quantidade'), _valor = __WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */]('valor')) {
+    constructor(_data = Object(__WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */])('data'), _quantidade = Object(__WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */])('quantidade'), _valor = Object(__WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */])('valor')) {
 
         Object.assign(this, { _quantidade, _valor });
         this._data = new Date(_data.getTime());
@@ -108,52 +108,18 @@ let Negociacao = class Negociacao {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApplicationException; });
-/* unused harmony export isApplicationException */
-/* harmony export (immutable) */ __webpack_exports__["b"] = getExceptionMessage;
-let ApplicationException = class ApplicationException extends Error {
-
-    constructor(msg = '') {
-
-        super(msg);
-        this.name = this.constructor.name;
-    }
-};
-
-const exception = ApplicationException;
-
-function isApplicationException(err) {
-
-    return err instanceof exception || Object.getPrototypeOf(err) instanceof exception;
-}
-
-function getExceptionMessage(err) {
-
-    if (isApplicationException(err)) {
-        return err.message;
-    } else {
-        console.log(err);
-        return 'Não foi possível realizar a operação.';
-    }
-}
-
-/***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__negociacao_Negociacao_js__ = __webpack_require__(3);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__negociacao_Negociacao_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__negociacao_NegociacaoDao_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__negociacao_NegociacaoDao_js__ = __webpack_require__(7);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__negociacao_Negociacoes_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__negociacao_Negociacoes_js__ = __webpack_require__(19);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__negociacao_Negociacoes_js__["a"]; });
 
 
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -197,7 +163,7 @@ let ProxyFactory = class ProxyFactory {
 };
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -266,7 +232,7 @@ let ConnectionFactory = class ConnectionFactory {
 };
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -344,54 +310,42 @@ let NegociacaoDao = class NegociacaoDao {
 };
 
 /***/ }),
+/* 8 */,
 /* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateConverter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DataInvalidaException_js__ = __webpack_require__(10);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApplicationException; });
+/* unused harmony export isApplicationException */
+/* harmony export (immutable) */ __webpack_exports__["b"] = getExceptionMessage;
+let ApplicationException = class ApplicationException extends Error {
 
+    constructor(msg = '') {
 
-let DateConverter = class DateConverter {
-
-    constructor() {
-
-        throw new Error('Esta classe não pode ser instanciada');
-    }
-
-    static paraTexto(data) {
-
-        return `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`;
-    }
-
-    static paraData(texto) {
-
-        if (!/\d{2}\/\d{2}\/\d{4}/.test(texto)) throw new __WEBPACK_IMPORTED_MODULE_0__DataInvalidaException_js__["a" /* DataInvalidaException */]();
-
-        return new Date(...texto.split('/').reverse().map((item, indice) => item - indice % 2));
+        super(msg);
+        this.name = this.constructor.name;
     }
 };
+
+const exception = ApplicationException;
+
+function isApplicationException(err) {
+
+    return err instanceof exception || Object.getPrototypeOf(err) instanceof exception;
+}
+
+function getExceptionMessage(err) {
+
+    if (isApplicationException(err)) {
+        return err.message;
+    } else {
+        console.log(err);
+        return 'Não foi possível realizar a operação.';
+    }
+}
 
 /***/ }),
 /* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataInvalidaException; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_ApplicationException_js__ = __webpack_require__(4);
-
-
-let DataInvalidaException = class DataInvalidaException extends __WEBPACK_IMPORTED_MODULE_0__util_ApplicationException_js__["a" /* ApplicationException */] {
-
-    constructor() {
-
-        super('A data deve estar no formato dd/mm/aaaa');
-    }
-};
-
-/***/ }),
-/* 11 */,
-/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -411,20 +365,20 @@ let HttpService = class HttpService {
 };
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controllers_NegociacaoController_js__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__domain_index_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controllers_NegociacaoController_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__domain_index_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_dist_css_bootstrap_theme_css__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_dist_css_bootstrap_theme_css__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_dist_css_bootstrap_theme_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap_dist_css_bootstrap_theme_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_js_modal_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_js_modal_js__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_js_modal_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_bootstrap_js_modal_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_meucss_css__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_meucss_css__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_meucss_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__css_meucss_css__);
 
 
@@ -449,13 +403,13 @@ const config = {
 fetch(`${"http://localhost:3000"}/negociacoes`, config).then(() => console.log('Dado enviado com sucesso'));
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NegociacaoController; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domain_index_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ui_index_js__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domain_index_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ui_index_js__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_index_js__ = __webpack_require__(1);
 var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _desc, _value, _class2;
 
@@ -494,7 +448,7 @@ function _applyDecoratedDescriptor(target, property, decorators, descriptor, con
 
 
 
-let NegociacaoController = (_dec = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["c" /* controller */]('#data', '#quantidade', '#valor'), _dec2 = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["b" /* bindEvent */]('submit', '.form'), _dec3 = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["d" /* debounce */](), _dec4 = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["b" /* bindEvent */]('click', '#botao-importa'), _dec5 = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["d" /* debounce */](), _dec6 = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["b" /* bindEvent */]('click', '#botao-apaga'), _dec(_class = (_class2 = class NegociacaoController {
+let NegociacaoController = (_dec = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["c" /* controller */])('#data', '#quantidade', '#valor'), _dec2 = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["b" /* bindEvent */])('submit', '.form'), _dec3 = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["d" /* debounce */])(), _dec4 = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["b" /* bindEvent */])('click', '#botao-importa'), _dec5 = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["d" /* debounce */])(), _dec6 = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["b" /* bindEvent */])('click', '#botao-apaga'), _dec(_class = (_class2 = class NegociacaoController {
 
     constructor(_inputData, _inputQuantidade, _inputValor) {
 
@@ -513,13 +467,13 @@ let NegociacaoController = (_dec = __WEBPACK_IMPORTED_MODULE_2__util_index_js__[
         return _asyncToGenerator(function* () {
 
             try {
-                const dao = yield __WEBPACK_IMPORTED_MODULE_2__util_index_js__["f" /* getNegociacaoDao */]();
+                const dao = yield Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["f" /* getNegociacaoDao */])();
                 const negociacoes = yield dao.listaTodos();
                 negociacoes.forEach(function (negociacao) {
                     return _this._negociacoes.adiciona(negociacao);
                 });
             } catch (err) {
-                _this._mensagem.texto = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */](err);
+                _this._mensagem.texto = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */])(err);
             }
         })();
     }
@@ -531,13 +485,13 @@ let NegociacaoController = (_dec = __WEBPACK_IMPORTED_MODULE_2__util_index_js__[
 
             try {
                 const negociacao = _this2._criaNegociacao();
-                const dao = yield __WEBPACK_IMPORTED_MODULE_2__util_index_js__["f" /* getNegociacaoDao */]();
+                const dao = yield Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["f" /* getNegociacaoDao */])();
                 yield dao.adiciona(negociacao);
                 _this2._negociacoes.adiciona(negociacao);
                 _this2._mensagem.texto = 'Negociação adicionada com sucesso';
                 _this2._limpaFormulario();
             } catch (err) {
-                _this2._mensagem.texto = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */](err);
+                _this2._mensagem.texto = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */])(err);
             }
         })();
     }
@@ -561,7 +515,7 @@ let NegociacaoController = (_dec = __WEBPACK_IMPORTED_MODULE_2__util_index_js__[
         return _asyncToGenerator(function* () {
 
             try {
-                const { NegociacaoService } = yield __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 45));
+                const { NegociacaoService } = yield __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 43));
 
                 const service = new NegociacaoService();
 
@@ -577,7 +531,7 @@ let NegociacaoController = (_dec = __WEBPACK_IMPORTED_MODULE_2__util_index_js__[
 
                 _this3._mensagem.texto = 'Negociações do período importadas com sucesso';
             } catch (err) {
-                _this3._mensagem.texto = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */](err);
+                _this3._mensagem.texto = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */])(err);
             }
         })();
     }
@@ -588,24 +542,24 @@ let NegociacaoController = (_dec = __WEBPACK_IMPORTED_MODULE_2__util_index_js__[
         return _asyncToGenerator(function* () {
 
             try {
-                const dao = yield __WEBPACK_IMPORTED_MODULE_2__util_index_js__["f" /* getNegociacaoDao */]();
+                const dao = yield Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["f" /* getNegociacaoDao */])();
                 yield dao.apagaTodos();
                 _this4._negociacoes.esvazia();
                 _this4._mensagem.texto = 'Negociações apagadas com sucesso';
             } catch (err) {
-                _this4._mensagem.texto = __WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */](err);
+                _this4._mensagem.texto = Object(__WEBPACK_IMPORTED_MODULE_2__util_index_js__["e" /* getExceptionMessage */])(err);
             }
         })();
     }
 }, (_applyDecoratedDescriptor(_class2.prototype, 'adiciona', [_dec2, _dec3], Object.getOwnPropertyDescriptor(_class2.prototype, 'adiciona'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'importaNegociacoes', [_dec4, _dec5], Object.getOwnPropertyDescriptor(_class2.prototype, 'importaNegociacoes'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'apaga', [_dec6], Object.getOwnPropertyDescriptor(_class2.prototype, 'apaga'), _class2.prototype)), _class2)) || _class);
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Bind; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ProxyFactory_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ProxyFactory_js__ = __webpack_require__(5);
 
 
 let Bind = class Bind {
@@ -623,13 +577,13 @@ let Bind = class Bind {
 };
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getNegociacaoDao; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ConnectionFactory_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__domain_negociacao_NegociacaoDao_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ConnectionFactory_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__domain_negociacao_NegociacaoDao_js__ = __webpack_require__(7);
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 
@@ -648,7 +602,7 @@ let getNegociacaoDao = (() => {
 })();
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -673,7 +627,7 @@ function debounce(milissegundos = 500) {
 }
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -712,7 +666,7 @@ function associaEvento(instance, metadado) {
 }
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -723,7 +677,7 @@ function obrigatorio(parametro) {
 }
 
 /***/ }),
-/* 20 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -731,7 +685,7 @@ function obrigatorio(parametro) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_index_js__ = __webpack_require__(1);
 
 
-function bindEvent(event = __WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */]('event'), selector = __WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */]('selector'), prevent = true) {
+function bindEvent(event = Object(__WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */])('event'), selector = Object(__WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* obrigatorio */])('selector'), prevent = true) {
 
     return function (target, propertyKey, descriptor) {
 
@@ -742,7 +696,7 @@ function bindEvent(event = __WEBPACK_IMPORTED_MODULE_0__util_index_js__["g" /* o
 }
 
 /***/ }),
-/* 21 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -777,31 +731,25 @@ let Negociacoes = class Negociacoes {
 };
 
 /***/ }),
-/* 22 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__views_MensagemView_js__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__views_MensagemView_js__ = __webpack_require__(21);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__views_MensagemView_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_NegociacoesView_js__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_NegociacoesView_js__ = __webpack_require__(22);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__views_NegociacoesView_js__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_View_js__ = __webpack_require__(2);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_Mensagem_js__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_Mensagem_js__ = __webpack_require__(23);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__models_Mensagem_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__converters_DataInvalidaException_js__ = __webpack_require__(10);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__converters_DateConverter_js__ = __webpack_require__(9);
-/* unused harmony namespace reexport */
-
-
 
 
 
 
 
 /***/ }),
-/* 23 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -818,14 +766,12 @@ let MensagemView = class MensagemView extends __WEBPACK_IMPORTED_MODULE_0__View_
 };
 
 /***/ }),
-/* 24 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NegociacoesView; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__View_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__converters_DateConverter_js__ = __webpack_require__(9);
-
 
 
 let NegociacoesView = class NegociacoesView extends __WEBPACK_IMPORTED_MODULE_0__View_js__["a" /* View */] {
@@ -846,7 +792,7 @@ let NegociacoesView = class NegociacoesView extends __WEBPACK_IMPORTED_MODULE_0_
             <tbody>
                 ${model.paraArray().map(negociacao => `
                     <tr>
-                        <td>${__WEBPACK_IMPORTED_MODULE_1__converters_DateConverter_js__["a" /* DateConverter */].paraTexto(negociacao.data)}</td>
+                        <td>${negociacao.data.toLocaleDateString()}</td>
                         <td>${negociacao.quantidade}</td>
                         <td>${negociacao.valor}</td>
                         <td>${negociacao.volume}</td>
@@ -867,7 +813,7 @@ let NegociacoesView = class NegociacoesView extends __WEBPACK_IMPORTED_MODULE_0_
 };
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -891,22 +837,22 @@ let Mensagem = class Mensagem {
 };
 
 /***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 26 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
-/***/ }),
-/* 27 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
 /***/ })
-],[13]);
+],[11]);
